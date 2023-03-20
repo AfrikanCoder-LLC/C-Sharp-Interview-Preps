@@ -66,5 +66,20 @@ namespace Answers
             }            
             return false;
         }
+    
+        public static bool CheckIfAllCharactersInStringAreUnique(string inputString)
+        {
+            Dictionary<char, int> stringDictionary = new Dictionary<char, int>();
+
+            foreach (char c in inputString)
+            {
+                if (stringDictionary.ContainsKey(c))
+                    return false;
+                else
+                    stringDictionary.Add(c, 1);
+            }
+            return true;
+            return false;
+        }
     }
 }
