@@ -41,5 +41,30 @@ namespace Answers
             }
             return substringList;
         }
+
+        /// <summary>
+        /// What is an anagram? : 
+        /// a word, phrase, or name formed by rearranging the letters of another, such as spar, formed from rasp.
+        /// </summary>
+        /// <param name="firstString"></param>
+        /// <param name="secondString"></param>
+        /// <returns></returns>
+        public static bool CheckIfStringsAreAnagrams(string firstString, string secondString)
+        {             
+            char[] firstStringChars = firstString.ToLower().ToCharArray();
+            char[] secondStringChars = secondString.ToLower().ToCharArray();
+             
+            Array.Sort(firstStringChars);
+            Array.Sort(secondStringChars);
+             
+            string sortedFirstString = new string(firstStringChars);
+            string sortedSecondString = new string(secondStringChars);
+             
+            if (sortedFirstString == sortedSecondString)
+            {
+                return true;
+            }            
+            return false;
+        }
     }
 }

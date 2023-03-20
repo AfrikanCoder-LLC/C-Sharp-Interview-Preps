@@ -7,14 +7,14 @@ namespace Answers
         static void Main()
         {
             //var output = AlgorithmsAndDataStructures.RemoveDuplicateCharactersFromString("KKennittth");
-            var subStrings =
-                AlgorithmsAndDataStructures.GetAllPossibleSubstringsInAString("abcdefgh");
+            //var subStrings =
+            //    AlgorithmsAndDataStructures.GetAllPossibleSubstringsInAString("ken fukizi");
 
-            foreach (string subStr in subStrings)
-            {
-                Console.WriteLine(subStr);
-            }
-            //Console.WriteLine(output);
+            //foreach (string subStr in subStrings)
+            //{
+            //    Console.WriteLine(subStr);
+            //}
+            Console.WriteLine(AlgorithmsAndDataStructures.CheckIfStringsAreAnagrams("spar", "rasp"));
             Console.WriteLine();
         }
     }
