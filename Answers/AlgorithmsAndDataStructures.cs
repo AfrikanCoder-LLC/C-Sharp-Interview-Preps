@@ -9,14 +9,12 @@ namespace Answers
         public static string RemoveDuplicateCharactersFromString(string inputString)
         {
             var outputString = string.Empty;
-            var tempString = string.Empty;
-
+            
             foreach (char character in inputString)
             {
-                var charIsnotInEmptyString = tempString.Contains(character) == false;
+                var charIsnotInEmptyString = outputString.Contains(character) == false;
                 if (charIsnotInEmptyString)
-                {
-                    tempString += character;
+                {                   
                     outputString += character;
                 }
             }
