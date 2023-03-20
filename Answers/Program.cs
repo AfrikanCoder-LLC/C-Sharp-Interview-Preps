@@ -6,7 +6,9 @@ namespace Answers
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var output = AlgorithmsAndDataStructures.RemoveDuplicateCharactersFromString("KKennittth");
+            Console.WriteLine(output);
+            Console.WriteLine();
         }
     }
 }
