@@ -17,7 +17,8 @@ namespace Answers
             //Console.WriteLine(AlgorithmsAndDataStructures.CheckIfStringsAreAnagrams("spar", "rasp"));
             //Console.WriteLine(AlgorithmsAndDataStructures.CheckIfAllCharactersInStringAreUnique("fukizi"));
             //Console.WriteLine(AlgorithmsAndDataStructures.ReverseStringOrder("FUKIZI"));
-            Console.WriteLine(AlgorithmsAndDataStructures.IsStringAPalindrome("sagas"));
+            //Console.WriteLine(AlgorithmsAndDataStructures.IsStringAPalindrome("sagas"));
+            Console.WriteLine(AlgorithmsAndDataStructures.CountNumberOfWordsInSentence("This is just a test sentence"));
             Console.WriteLine();
         }
     }

@@ -118,5 +118,25 @@ namespace Answers
                 endIndex--;
             }
         }
+
+        public static int CountNumberOfWordsInSentence(string sentence)
+        {
+            int result = 0;
+
+            //Remove all leading and trailing white-space characters
+            sentence = sentence.Trim();
+           
+            if (sentence == string.Empty)
+            {
+                return result;
+            }
+                
+            foreach (string word in sentence.Split(' '))
+            {
+                result++;
+            }
+                
+            return result;
+        }
     }
 }
