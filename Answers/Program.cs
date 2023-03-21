@@ -18,7 +18,10 @@ namespace AlgorithmsAndDataStructures
             //Console.WriteLine(Strings.CheckIfAllCharactersInStringAreUnique("fukizi"));
             //Console.WriteLine(Strings.ReverseStringOrder("FUKIZI"));
             //Console.WriteLine(Strings.IsStringAPalindrome("sagas"));
-            Console.WriteLine(Strings.CountNumberOfWordsInSentence("This is just a test sentence"));
+            //Console.WriteLine(Strings.CountNumberOfWordsInSentence("This is just a test sentence"));
+            
+            int[] numArray = {3,5,7,7,9};
+            Console.WriteLine(Arrays.CheckIfArrayHasDuplicateEntry(numArray));
             Console.WriteLine();
         }
     }
