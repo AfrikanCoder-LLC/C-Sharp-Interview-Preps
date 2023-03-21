@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
-namespace Answers
+namespace AlgorithmsAndDataStructures
 {
-    public static class AlgorithmsAndDataStructures
+    public static class Strings
     {
         /// <summary>
         /// 
@@ -26,7 +25,7 @@ namespace Answers
 
             return outputString;
         }
-        
+         
         public static List<string> GetAllPossibleSubstringsInAString(string inputString)
         {
             List<string> substringList = new List<string>();           
