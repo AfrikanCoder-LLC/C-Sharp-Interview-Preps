@@ -90,5 +90,33 @@ namespace Answers
             }                
             return outputString;
         }
+
+        /// <summary>
+        /// What is a palindrome? :
+        /// a word, phrase, or sequence that reads the same backwards as forwards, e.g. madam or racecar.
+        /// </summary>
+        /// <param name="inputString"></param>
+        /// <returns></returns>
+        public static bool IsStringAPalindrome(string inputString)
+        {
+            int startIndex = 0;
+            int endIndex = inputString.Length - 1;
+            
+            while (true)
+            {
+                if (startIndex > endIndex)
+                {
+                    return true;
+                }
+                char leftCharacter = inputString[startIndex];
+                char rightCharacter = inputString[endIndex];
+                if (char.ToLower(leftCharacter) != char.ToLower(rightCharacter))
+                {
+                    return false;
+                }
+                startIndex++;
+                endIndex--;
+            }
+        }
     }
 }
