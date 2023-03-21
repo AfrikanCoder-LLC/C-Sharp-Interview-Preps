@@ -71,15 +71,14 @@ namespace Answers
         {
             Dictionary<char, int> stringDictionary = new Dictionary<char, int>();
 
-            foreach (char c in inputString)
+            foreach (char character in inputString)
             {
-                if (stringDictionary.ContainsKey(c))
+                if (stringDictionary.ContainsKey(character))
                     return false;
                 else
-                    stringDictionary.Add(c, 1);
+                    stringDictionary.Add(character, 1);
             }
             return true;
-            return false;
         }
     }
 }
