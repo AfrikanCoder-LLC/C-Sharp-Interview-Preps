@@ -80,5 +80,15 @@ namespace Answers
             }
             return true;
         }
+
+        public static string ReverseStringOrder(string inputString)
+        {
+            string outputString = string.Empty;
+            for (int i = inputString.Length - 1; i >= 0; i--)
+            {
+                outputString += inputString[i];
+            }                
+            return outputString;
+        }
     }
 }
