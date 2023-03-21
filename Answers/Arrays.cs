@@ -46,5 +46,23 @@ namespace AlgorithmsAndDataStructures
             }
             return inputArray;
         }
+
+        public static int[] MoveZerosToEndOfArray(int[] inputArray)
+        {
+            int currentPosition = 0;
+            for (int i = 0; i < inputArray.Length; i++)
+            {
+                if (inputArray[i] != 0)
+                {
+                    inputArray[currentPosition] = inputArray[i];
+                    currentPosition++;
+                }
+            }
+            for (int i = currentPosition; i < inputArray.Length; i++)
+            {
+                inputArray[i] = 0;
+            }
+            return inputArray;
+        }        
     }
 }
