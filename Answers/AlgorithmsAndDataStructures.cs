@@ -121,22 +121,22 @@ namespace Answers
 
         public static int CountNumberOfWordsInSentence(string sentence)
         {
-            int result = 0;
+            int wordCount = 0;
 
             //Remove all leading and trailing white-space characters
             sentence = sentence.Trim();
            
             if (sentence == string.Empty)
             {
-                return result;
+                return wordCount;
             }
                 
             foreach (string word in sentence.Split(' '))
             {
-                result++;
+                wordCount++;
             }
                 
-            return result;
+            return wordCount;
         }
     }
 }
