@@ -23,8 +23,10 @@ namespace AlgorithmsAndDataStructures
             //int[] numArray = {3,5,7,7,9};
             //Console.WriteLine(Arrays.CheckIfArrayHasDuplicateEntry(numArray));
 
-            int[] inputArray =  { 3,5,7,7,9,8,13,4,2}; int pivotIndex = 1;
-            var outputArray = Arrays.RotateArrayByPivot(inputArray, pivotIndex);
+            //int[] inputArray =  { 3,5,7,7,9,8,13,4,2}; int pivotIndex = 1;
+            //var outputArray = Arrays.RotateArrayByPivot(inputArray, pivotIndex);
+            int[] inputArray = { 0, 0, 0, 7, 0, 15, 9, 13, 2, 1, 5 };
+            var outputArray = Arrays.MoveZerosToEndOfArray(inputArray);
             //Console.WriteLine();
             Console.WriteLine();
         }
