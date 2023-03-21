@@ -16,9 +16,35 @@ namespace AlgorithmsAndDataStructures
                     return true;
                 }
                             
-                tempDictionary.Add(element, 1);
+                tempDictionary.Add(element, 1); 
             }
             return false;
+        }
+
+        public static int[] RotateArrayByPivot(int[] inputArray, int pivotIndex)
+        {           
+            pivotIndex %= inputArray.Length;
+            //Rotate left part
+            inputArray = Rotate(inputArray, 0, pivotIndex - 1);
+            //Rotate right part
+            inputArray = Rotate(inputArray, pivotIndex, inputArray.Length - 1);
+            //Rotate all
+            inputArray = Rotate(inputArray, 0, inputArray.Length - 1);
+
+            return inputArray;
+        }
+
+        private static int[] Rotate(int[] inputArray, int startIndex, int endIndex)
+        {
+            while (startIndex < endIndex)
+            {
+                int temp = inputArray[startIndex];
+                inputArray[startIndex] = inputArray[endIndex];
+                inputArray[endIndex] = temp;
+                startIndex++;
+                endIndex--;
+            }
+            return inputArray;
         }
     }
 }
